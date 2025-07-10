@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pop The Balloon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .balloon-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #ff4081;
+            border-radius: 4px;
+        }
+        
+        /* Section hover effects */
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+          a{
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bolder;
+            margin-left: 500px;
+            
+          }
+    </style>
+</head>
+<body class="font-sans bg-gradient-to-b from-pink-50 to-purple-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden">
+        <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col items-center text-center">
+            <div class="balloon-float mb-6 text-6xl">🎈</div>
+            <h1 class="hero-title text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                About <span class="text-pink-600">Pop The Balloon</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed">
+                Revolutionizing online dating with a fun, authentic approach inspired by the popular dating show format.
+            </p>
+            <p class="text-lg text-pink-600 font-medium mt-4">
+                Where real connections happen through honest reactions, not endless swiping.
+            </p>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Our Mission</h2>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    We believe dating should be fun, authentic, and meaningful. Traditional dating apps have turned finding love into a superficial game of endless swiping. We're changing that.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Pop The Balloon brings the excitement and authenticity of real-time dating shows to your phone, creating genuine connections through honest, immediate reactions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balloon Concept Section -->
+    <section class="py-16 bg-gradient-to-r from-pink-100 to-purple-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="text-center md:text-center">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">🎈 The Balloon Concept</h2>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Inspired by the popular dating show format, our unique "balloon popping" system encourages authentic interactions:
+                        </p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                <span><strong>Real-Time Sessions:</strong> Join live dating rooms with multiple participants</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                <span><strong>Honest Reactions:</strong> Express genuine interest or politely pass with balloon pops</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                <span><strong>Immediate Feedback:</strong> Know where you stand without waiting or guessing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                <span><strong>Natural Conversations:</strong> Connect with people who are genuinely interested</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 bg-white rounded-full shadow-xl flex items-center justify-center">
+                        <div class="absolute w-16 h-16 bg-pink-500 rounded-full opacity-20 top-8 left-8"></div>
+                        <div class="absolute w-20 h-20 bg-purple-500 rounded-full opacity-20 bottom-8 right-8"></div>
+                        <div class="text-6xl balloon-float">🎈</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Us Different Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">✨ What Makes Us Different</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="section-card bg-gray-50 p-8 rounded-xl transition duration-300 ease-in-out">
+                    <div class="text-4xl mb-4 text-pink-500">⚡</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Real-Time Reactions</h3>
+                    <p class="text-gray-700">Experience honest, immediate connections without the endless swiping.</p>
+                </div>
+                <div class="section-card bg-gray-50 p-8 rounded-xl transition duration-300 ease-in-out">
+                    <div class="text-4xl mb-4 text-pink-500">💖</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Authentic Interactions</h3>
+                    <p class="text-gray-700">See genuine reactions and make decisions based on real chemistry.</p>
+                </div>
+                <div class="section-card bg-gray-50 p-8 rounded-xl transition duration-300 ease-in-out">
+                    <div class="text-4xl mb-4 text-pink-500">🎭</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Engaging Format</h3>
+                    <p class="text-gray-700">Participate in fun, show-inspired dating sessions that break the ice naturally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 bg-gradient-to-b from-purple-100 to-pink-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">📱 How It Works</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Vertical line -->
+                    <div class="absolute h-full w-1 bg-pink-400 left-1/2 transform -translate-x-1/2 hidden md:block"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center mb-12">
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-1 md:order-1 text-right">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">1. Create Your Profile</h3>
+                            <p class="text-gray-700">Add photos, write a bio, and set your preferences. Show your authentic self!</p>
+                        </div>
+                        <div class="md:w-1/2 flex justify-center order-2 md:order-2">
+                            <div class="w-16 h-16 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center mb-12">
+                        <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                            <div class="w-16 h-16 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-1 md:order-2 text-left">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">2. Join Dating Rooms</h3>
+                            <p class="text-gray-700">Enter live sessions with other singles looking for connections in your area.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center mb-12">
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-1 md:order-1 text-right">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">3. Pop or Keep</h3>
+                            <p class="text-gray-700">React honestly to other participants. Keep their balloon if interested, pop if not.</p>
+                        </div>
+                        <div class="md:w-1/2 flex justify-center order-2 md:order-2">
+                            <div class="w-16 h-16 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold text-xl shadow-lg">3</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                            <div class="w-16 h-16 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-xl shadow-lg">4</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-1 md:order-2 text-left">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">4. Match & Chat</h3>
+                            <p class="text-gray-700">Connect with people who kept your balloon and start meaningful conversations!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Community Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Safety & Community</h2>
+                <p class="text-lg text-center text-gray-700 mb-12 leading-relaxed">
+                    Your safety is our top priority. We've built a platform where respect and authenticity thrive:
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Profile Verification</h3>
+                        <p class="text-gray-700">Enhanced security measures to ensure authentic users</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Community Guidelines</h3>
+                        <p class="text-gray-700">Clear rules promoting respect and kindness</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Reporting System</h3>
+                        <p class="text-gray-700">Easy tools to report inappropriate behavior</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Privacy Controls</h3>
+                        <p class="text-gray-700">You control what information you share and when</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg md:col-span-2">
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">24/7 Moderation</h3>
+                        <p class="text-gray-700">Active monitoring to maintain a positive environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 bg-gradient-to-r from-pink-50 to-purple-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Values</h2>
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-3xl mb-3">💎</div>
+                    <h3 class="text-lg font-bold mb-2">Authenticity & Honesty</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-3xl mb-3">🛡️</div>
+                    <h3 class="text-lg font-bold mb-2">Safety & Respect</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-3xl mb-3">🌍</div>
+                    <h3 class="text-lg font-bold mb-2">Inclusivity & Diversity</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-3xl mb-3">🎉</div>
+                    <h3 class="text-lg font-bold mb-2">Fun & Entertainment</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-3xl mb-3">💞</div>
+                    <h3 class="text-lg font-bold mb-2">Meaningful Connections</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h3 class="text-lg font-bold mb-2">User Privacy</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Our Story</h2>
+                <div class="prose prose-lg text-gray-700 mx-auto">
+                    <p>
+                        Pop The Balloon was born from a simple observation: traditional dating apps weren't working. People were spending hours swiping through profiles, engaging in meaningless conversations, and struggling to find genuine connections.
+                    </p>
+                    <p>
+                        Inspired by the honest, entertaining format of dating shows, we set out to create something different. A platform where real chemistry could flourish, where people could be themselves, and where finding love could actually be fun again.
+                    </p>
+                    <p>
+                        Today, we're proud to be building a community where authentic connections happen naturally, one balloon at a time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Looking Forward Section -->
+    <section class="py-16 bg-gradient-to-b from-purple-100 to-pink-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">🔮 Looking Forward</h2>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    We're just getting started! Our roadmap includes exciting features like:
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                        <p class="text-gray-800">• Video dating rooms for face-to-face connections</p>
+                    </div>
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                        <p class="text-gray-800">• AI-powered compatibility matching</p>
+                    </div>
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                        <p class="text-gray-800">• Group dating events and activities</p>
+                    </div>
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                        <p class="text-gray-800">• Enhanced safety and verification features</p>
+                    </div>
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg md:col-span-2">
+                        <p class="text-gray-800">• Global expansion to connect hearts worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+    <a href="./index.html"><-BACK TO HOME</a>
+    </section>
+
+             
+</body>
+</html>
