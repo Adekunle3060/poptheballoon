@@ -1,292 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  .
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        
-        .dating{
-            font-weight: 900;
-            font-size: 1.8rem;
-            color:  rgb(192, 96, 161);
-            margin-top: 50px;
-            margin-left: 80px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pop the Balloon</title>
 
-        }
-        .pop{
-            font-weight: 900;
-            font-size: 1.8rem;
-            color:rgb(167, 111, 255);
-            margin-top: 50px;
-            margin-left: 80px;
-        }
-        body{
-        background: linear-gradient(to bottom, #eff6ff, #f5f3ff); /* from-blue-50 to-purple-50 */
-        min-height: 100vh;
-        font-family: sans-serif;
-        }
-        .login{
-            width: 90px;
-            height: 60px;
-            background-color: white;
-            color: blueviolet;
-            margin-right: 20px;
-            border: 1px solid blueviolet;
-        }
-        .sign-up{
-            width: 90px;
-            height: 60px;
-            background-color:blueviolet;
-            margin-bottom: 50px;
-            color: white;
-            margin-right: 70px;
-            
-        }
-        .button{
-            display: flex;
-            justify-content: end;
-            position: relative;bottom: 60px;
-        
-        }
-        .dating{
-            font-size: 4rem;
-        }
-.dat{
-    width: 50px;
-    height: 50px;
-}
-.below{
-    width: 500px;
-    font-size: 1.4rem;
-    margin-left: 80px;
-    color: rgb(111, 106, 106);
-}   
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 
-.start{
-    width: 300px;
-    
-}
-.button-two{
-display: flex;
-width: 470px;
-justify-content: space-between;
-}
-.tail{
-    margin-top:50px;
-}
-.text-gray-600{
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-}
-.foot{
-    width: 1150px;
-    height: 300px;
-    background-color: rgb(230, 203, 230);
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-.h2-footer{
-    font-size: 2.5rem;
-    font-weight: bolder;
-}
-.p-footer{
-    font-size: 1.2rem;
-    font-weight: lighter;
-}
-.b-footer{
-    width: 300px;
-    height: 70px;
-    border-style: dashed;
-    background-color: rgb(167, 111, 255);
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    
-
-}
-.last-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 1145px;
-    margin-left: 60px;
-}
-.start-one{
-    background-color:rgb(167, 111, 255);
-    color: #fff;
-    width: 220px;
-    margin-left: 80px;
-    height: 60px;
-    border-radius: 8px;
-    border-style: none;
-}
-.start-two{
-    background-color: #fff;
-    color: rgb(167, 111, 255);
-    height: 60px;
-    width: 150px;
-    border-radius: 8px;
-    border-style: none;
-    border: 1px solid rgb(167, 111, 255);
-}
-
-.img-pop{
-margin-left: 700px;
-position: relative;bottom: 50px;
-}
-
-
-    </style>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #eff6ff, #f5f3ff);
+      min-height: 100vh;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="header">
-<h1 class="pop"> 🎈 Pop the Balloon</h1>
-</div>
-<div class="button">
-<form action="./login.html" method="get">
-<button class="login">LOGIN</button>
-</form>
-<form action="./sign-up.html" method="get">
-<button class="sign-up">SIGN UP</button>
-</form>
-</div>
-<div class="dat">
-<h1 class="dating">
-    Dating Reimagined
-</h1>
-<div class="below">
-    <p>
-Expreience Authentic connections through our unique balloon-popping format. No more endless swiping- just real reactions and genuine connections.
-    </p>
-<br>
-</div>
-<div class="button-two">
-    <form action="./sign-up.html" method="get">
-    <button class="start-one">START YOUR JOURNEY</button>
-    </form>
-    <form action="./more.html" method="get">
-    <button class="start-two">LEARN MORE</button>
-    </form>
-</div>
-</div>
-<div>
-<div class="img-pop">
-<img src="./pop.png" alt=""  width="400px">
-</div>
+  <!-- HEADER -->
+  <header class="flex justify-between items-center px-6 py-6">
+    <h1 class="text-3xl font-extrabold text-violet-600">🎈 Pop the Balloon</h1>
 
-
-</div>
-<div class="tail">
-     <section id="features" class="py-16 bg-purple">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Why Choose Pop The Balloon?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-heart-circle-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Real-Time Dating</h3>
-                    <p class="text-gray-600">Experience authentic connections through live dating sessions inspired by popular shows.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Group Interactions</h3>
-                    <p class="text-gray-600">Meet multiple people at once in fun, engaging rooms that break the ice naturally..</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Safe & Secure</h3>
-                    <p class="text-gray-600">Your safety is our priority with verified profiles and comprehensive moderation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="flex gap-3">
+      <a href="./login.html">
+        <button class="px-6 py-3 border border-violet-600 text-violet-600 rounded-lg">
+          LOGIN
+        </button>
+      </a>
+      <a href="./sign-up.html">
+        <button class="px-6 py-3 bg-violet-600 text-white rounded-lg">
+          SIGN UP
+        </button>
+      </a>
     </div>
-    <br>
-    <br>
-        <section id="features" class="py-16 bg-purple">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">How It Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Create Profile</h3>
-                    <p class="text-gray-600">Set up your profile with photos and preferences</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-gamepad text-blue-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Join Room</h3>
-                    <p class="text-gray-600">Enter live dating sessions with other singles</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-poo-storm"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pop or Keep</h3>
-                    <p class="text-gray-600">React honestly - keep balloons you like, pop the rest</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-brands fa-rocketchat"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Match & Chat</h3>
-                    <p class="text-gray-600">Connect with mutual interests and start chatting</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="foot">
-            <h2 class="h2-footer">Ready to Find Your Match?</h2>
-            <p class="p-footer">Join thousands of singles already finding genuine <br> connections through our unique format.</p>
-            <br>
-            <br>
-            <form action="./sign-up.html" method="get">
-            <button class="b-footer"> 💓GET STARTED FOR FREE</button>
-            </form>
-        </div>
-        <br>
-        <br>
-        <div class="last-footer">
-            <a href="https://twiiter.com"> <img src="./twitter.png" alt="" height="25px" width="25px"></a>
-            <a href="https://tiktok.com"><img src="./tik.png" alt="" height="25px" width="25px"></a>
-            <a href="http://instagram.com"><img src="./insta.jpg" alt="" height="25px" width="20px"></a>
-            <p>© 2025 Pop The Balloon. All rights reserved.</p>
-            <a href="">PRIVACY POLICY</a>
-            <a href="">TERMS OF SERVICE</a>
-            <a href="">ABOUT US</a>
+  </header>
 
-        </div>
-         </footer>
-<script>
-         function checkAge() {
+  <!-- HERO -->
+  <section class="px-6 md:px-20 mt-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-5xl font-extrabold text-pink-600 mb-6">
+        Dating Reimagined
+      </h2>
+
+      <p class="text-gray-600 text-lg mb-8">
+        Experience authentic connections through our unique balloon-popping
+        format. No endless swiping — just real reactions and genuine
+        connections.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="./sign-up.html">
+          <button class="px-8 py-4 bg-violet-600 text-white rounded-lg">
+            START YOUR JOURNEY
+          </button>
+        </a>
+        <a href="./more.html">
+          <button class="px-8 py-4 border border-violet-600 text-violet-600 rounded-lg">
+            LEARN MORE
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="./pop.png" alt="Pop the Balloon" class="w-80 md:w-96" />
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section id="why-features" class="py-20 px-6">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
+      Why Choose Pop The Balloon?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-md transition">
+        <i class="fa-solid fa-heart-circle-check text-3xl text-pink-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Real-Time Dating</h3>
+        <p class="text-gray-600">
+          Experience authentic connections through live dating sessions.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-md transition">
+        <i class="fa-solid fa-people-group text-3xl text-blue-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Group Interactions</h3>
+        <p class="text-gray-600">
+          Meet multiple people at once in fun, engaging rooms.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-md transition">
+        <i class="fa-solid fa-lock text-3xl text-purple-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Safe & Secure</h3>
+        <p class="text-gray-600">
+          Verified profiles and strong moderation keep you safe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="py-20 px-6 bg-purple-50">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">
+      How It Works
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <i class="fa-solid fa-user text-3xl text-pink-500 mb-4"></i>
+        <h3 class="font-bold">Create Profile</h3>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <i class="fa-solid fa-gamepad text-3xl text-blue-500 mb-4"></i>
+        <h3 class="font-bold">Join Room</h3>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <i class="fa-solid fa-burst text-3xl text-purple-500 mb-4"></i>
+        <h3 class="font-bold">Pop or Keep</h3>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <i class="fa-brands fa-rocketchat text-3xl text-violet-500 mb-4"></i>
+        <h3 class="font-bold">Match & Chat</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <footer class="py-20 text-center bg-violet-100">
+    <h2 class="text-3xl font-bold mb-4">Ready to Find Your Match?</h2>
+    <p class="text-gray-600 mb-8">
+      Join thousands of singles finding real connections.
+    </p>
+
+    <a href="./sign-up.html">
+      <button class="px-10 py-4 bg-violet-600 text-white rounded-xl">
+        💓 GET STARTED FOR FREE
+      </button>
+    </a>
+
+    <div class="mt-10 flex justify-center gap-6 items-center text-sm">
+      <a href="https://twitter.com">Twitter</a>
+      <a href="https://tiktok.com">TikTok</a>
+      <a href="https://instagram.com">Instagram</a>
+      <span>© 2025 Pop The Balloon</span>
+    </div>
+  </footer>
+
+  <!-- AGE CHECK -->
+  <script>
+    function checkAge() {
+      if (localStorage.getItem("ageVerified") === "true") return;
+
       const age = prompt("Please enter your age:");
-
-      // Convert the input to a number
       const ageNum = parseInt(age, 10);
 
       if (isNaN(ageNum)) {
-        alert("Invalid input. Please enter a number.");
-        
+        alert("Please enter a valid number");
+        return checkAge();
       }
 
       if (ageNum >= 18) {
-        alert("Access granted. Welcome to the website!");
-        // You can allow access or show the website content here
+        localStorage.setItem("ageVerified", "true");
       } else {
-        alert("Access denied. You must be at least 18 years old.");
-        document.body.innerHTML = "<h1>Access Denied</h1><p>You must be 18 or older to view this website.</p>";
+        document.body.innerHTML =
+          "<h1 style='text-align:center;margin-top:50px;'>Access Denied</h1><p style='text-align:center;'>You must be 18 or older.</p>";
       }
     }
 
